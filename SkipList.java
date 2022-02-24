@@ -283,11 +283,11 @@ class SkipList
 
 }
 
-public class Hw02
+public class SkipList
 {
     public static String[] commands;
 
-    public Hw02(String inputFile) throws FileNotFoundException
+    public SkipList(String inputFile) throws FileNotFoundException
     {
         int numOfLines = 0;
 
@@ -322,7 +322,7 @@ public class Hw02
             typeOfSeed = "With the RNG unseeded,";
         }
 
-        Hw02 skip = new Hw02(fileName);
+        SkipList skip = new SkipList(fileName);
 
         SkipList newSkipList = new SkipList();
         newSkipList.rand.setSeed(rInput);
@@ -378,12 +378,4 @@ public class Hw02
         }
     }
 
-    //denotes info and how hard program was
-    public void complexityIndicator()
-    {
-        String nid = "ro834336";
-        double difficulty = 5;
-        double hoursSpent = 20.0;
-        System.err.println(nid + "; " + difficulty + "; " + hoursSpent);
-    }
 }
