@@ -2,22 +2,16 @@
 | Building and managing a BST
 |
 | Author: Ronald Campos
-| Language: Java
-||
-| To Execute: java Hw01 filename
-| where filename is in the current directory and contains
-| commands to insert, delete, print.
-|
 +=============================================================================*/
 import java.io.File;
 import java.util.Scanner;
 
 
-public class Hw01 extends Node
+public class BST extends Node
 {
     public Node root;
 
-    public Hw01()
+    public BST()
     {
         super();
         this.root = null;
@@ -159,7 +153,7 @@ public class Hw01 extends Node
 
     public static void main(String[] args) throws Exception
     {
-        Hw01 tree = new Hw01();
+        BST tree = new BST();
 
         String file = args[0];
             //open the file
